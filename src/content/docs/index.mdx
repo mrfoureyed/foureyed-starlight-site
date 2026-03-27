@@ -1,40 +1,88 @@
 ---
-title: Welcome to Starlight
-description: Get started building your docs site with Starlight.
+title: FourEyed Industries
+description: Engineering, R&D, and product design are our passions. Explore our curated collection of STL files for 3D printing, project showcase, blog posts, and documentation.
 template: splash # Remove or comment out this line to display the site sidebar on this page.
 hero:
-  tagline: Congrats on setting up a new Starlight project!
+  tagline: Engineering, R&D, and Product Design.
   image:
     file: ../../assets/houston.webp
-  actions:
-    - text: Example Guide
-      link: /guides/example/
-      icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
-      icon: external
-      variant: minimal
+#   actions:
+#     - text: Example Guide
+#       link: /guides/example/
+#       icon: right-arrow
+#     - text: Read the Starlight docs
+#       link: https://starlight.astro.build
+#       icon: external
+#       variant: minimal
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
+import { LinkButton } from '@astrojs/starlight/components';
 
 ## Next steps
 
 <CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
+	<Card title="STL Repository" icon="seti:folder">
+		Explore our curated collection of STL files for 3D printing, 
+		available to view and download within our site here or in our GitHub Repo.
+		<LinkButton
+  			href="https://docs.astro.build"
+  			icon="external"
+  			iconPlacement="start"
+			>
+  			View Collection
+		</LinkButton>
+		<LinkButton
+  			href="https://docs.astro.build"
+  			icon="github"
+  			iconPlacement="start"
+			>
+  			GitHub Repo
+		</LinkButton>
 	</Card>
-	<Card title="Change page layout" icon="document">
-		Delete `template: splash` in `src/content/docs/index.mdx` to display a
-		sidebar on this page.
+
+	<Card title="Project Showcase" icon="seti:image">
+		Explore our project showcase, where we feature inspiring creations, designs, projects.
+		<LinkButton
+  			href="https://docs.astro.build"
+  			icon="external"
+  			iconPlacement="start"
+			>
+  			Peruse Our Showcase
+		</LinkButton>
 	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
+
+	<Card title="FourEyed Blog" icon="pen">
+		Read our latest blog posts, where we share insights, tips, and updates about our projects, 3D printing, and the maker community.
+		<LinkButton
+  			href="https://docs.astro.build"
+  			icon="external"
+  			iconPlacement="start"
+			>
+  			Read the Blog
+		</LinkButton>
 	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
+	
+	<Card title="Straight To The Docs" icon="document">
+		View docs for our project, including guides, tutorials, and reference materials related to our STL collection, project showcase, and blog content.
+		<LinkButton
+  			href="https://docs.astro.build"
+  			icon="external"
+  			iconPlacement="start"
+			>
+			Dig into the Docs
+		</LinkButton>
 	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
+	
+	<Card title="Contact Us" icon="email">
+		Though we have day jobs, engineering, R&D, and product design are our passions. If you have questions regarding custom work, want to collaborate,
+		or are interested in learning more about our projects, please don't hesitate to reach out to us through our contact page or social media channels.
+		<LinkButton
+  			href="https://docs.astro.build"
+  			icon="email"
+  			iconPlacement="start"
+			>
+			Get in Touch!
+		</LinkButton>
 	</Card>
 </CardGrid>
